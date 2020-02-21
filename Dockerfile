@@ -17,12 +17,14 @@ RUN conda update -n base conda -y
 # Install required packages on top of base Jupyter image
 RUN conda install -y \
   pandas \
+  nltk \
   scipy \
   numpy \
   scikit-learn \
   tensorflow \
   matplotlib \
-  jupyterlab-git
+  jupyterlab-git \
+  tabulate
 
 # RUN conda install -c conda-forge/label/prerelease-jupyterlab jupyterlab
 
