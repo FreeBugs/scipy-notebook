@@ -11,17 +11,18 @@ RUN apt-get update && \
 # Switch back to notebook user (defined in the base image)
 USER $NB_UID
 
-# Install Rubix and other required packages on top of base Jupyter image
-RUN pip install --no-cache \
-    rubix \
-    python-gitlab \
-    scipy \
-    numpy \
-    pandas \
-    scikit-learn \
-    matplotlib \
-    tensorflow \
-    jupyterlab-git
+# Update conda
+RUN conda update -n base conda -y
+
+# Install required packages on top of base Jupyter image
+RUN conda install -y \
+  pandas \
+  scipy \
+  numpy \
+  scikit-learn \
+  tensorflow \
+  matplotlib \
+  jupyterlab-git
 
 # RUN conda install -c conda-forge/label/prerelease-jupyterlab jupyterlab
 
