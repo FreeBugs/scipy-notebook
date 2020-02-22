@@ -24,7 +24,8 @@ RUN conda install -y \
   tensorflow \
   matplotlib \
   jupyterlab-git \
-  tabulate
+  tabulate \
+  xlsxwriter
 
 # RUN conda install -c conda-forge/label/prerelease-jupyterlab jupyterlab
 
