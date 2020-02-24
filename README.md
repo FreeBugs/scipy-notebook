@@ -14,6 +14,7 @@ __Can be used locally or for docker swarm spawner usage, supporting homes on net
 | tensorflow     | 2.1
 
 Report issues here: https://github.com/FreeBugs/scipy-notebook/issues
+Docker images can be found here: https://hub.docker.com/r/darnold79/scipy-notebook
 
 ### How to run on your local machine
 You do not need to use the hub to run this image. To run the container locally:
