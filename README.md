@@ -13,7 +13,7 @@ __Can be used locally or for docker swarm spawner usage, supporting homes on net
 | scikit-learn   | 0.22
 | tensorflow     | 2.1
 
-Report issues here: [https://github.com/FreeBugs/scipy-notebook/issues]
+Report issues here: https://github.com/FreeBugs/scipy-notebook/issues
 
 ### How to run on your local machine
 You do not need to use the hub to run this image. To run the container locally:
