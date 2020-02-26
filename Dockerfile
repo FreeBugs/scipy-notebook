@@ -35,5 +35,8 @@ RUN jupyter serverextension enable --py jupyterlab_git
 # Upgrade juptyer-core (4.6.2 for insecure writes)
 RUN python -m pip install --upgrade jupyter-core
 
+# Add multithreaded gzip
+RUN python -m pip install mgzip
+
 # Insecure writes required for homes on network share
 ENV JUPYTER_ALLOW_INSECURE_WRITES 1
