@@ -1,11 +1,13 @@
 # scipy-notebook
 ## Single-user scipy notebook with JupyterLab.
+**Now with jupyterlab 2.0**
 __Can be used locally or for docker swarm spawner usage, supporting homes on network shares, ssh and more!__
 
 ### Included packages
 |                | Version
 |----------------|---------
-| jupyterlab-git | 0.9
+| jupyterlab     | 2.0
+| jupyterlab-git | partly available (issues with lab 2.0)
 | matplotlib     | 3.1
 | numpy          | 1.18
 | nltk           | 3.4
