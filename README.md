@@ -24,8 +24,15 @@ You do not need to use the hub to run this image. To run the container locally:
 ```shell
 docker run -d -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes \
   --mount type=bind,source=/home/user/jupyterlab,target=/home/jovyan \
-  --name scipy-notebook darnold79/scipy-notebook:test
+  --name scipy-notebook darnold79/scipy-notebook:latest
 ```
+On Windows:
+```cmd
+docker run -d -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes \
+  --mount type=bind,source=c:\path\to\share,target=/home/jovyan \
+  --name scipy-notebook darnold79/scipy-notebook:latest
+```
+
 You need to replace /home/user/jupyterlab with the directory you want to share with the jupyterlab container. On macOS this will be something like /Users/username/somedirectory, on Windows C:\Users\User\somedirectory. The directory has to be created before you can start the container.
 
 After the container started, to retrieve the access token:
