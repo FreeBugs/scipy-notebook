@@ -42,5 +42,9 @@ RUN jupyter lab build
 # Upgrade juptyer-core (4.6.2 for insecure writes)
 RUN python -m pip install --upgrade jupyter-core
 
+# Add some misc packages via PyPI
+RUN python -m pip install matplotlib_venn psycopg2-binary
+RUN python -m pip install git+git://github.com/FreeBugs/pyGeoDb.git
+
 # Add multithreaded gzip
 RUN python -m pip install mgzip
