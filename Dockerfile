@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook:latest
+FROM jupyter/scipy-notebook:48052e429f69
 
 USER root
 RUN apt-get update && apt-get install -y git
@@ -28,7 +28,7 @@ RUN conda install -y \
   matplotlib \
   jupyterlab-git \
   tabulate \
-  xlsxwriter
+  xlsxwriter 
 
 # No git support until this has been merged: https://github.com/jupyterlab/jupyterlab-git/pull/520
 #RUN jupyter labextension install @jupyterlab/git
@@ -45,6 +45,9 @@ RUN python -m pip install --upgrade jupyter-core
 # Add some misc packages via PyPI
 RUN python -m pip install matplotlib_venn psycopg2-binary
 RUN python -m pip install git+git://github.com/FreeBugs/pyGeoDb.git
+RUN python -m pip install pyprind
+RUN python -m pip install plotly
+RUN python -m pip install snap-stanford
 
 # Add multithreaded gzip
 RUN python -m pip install mgzip
