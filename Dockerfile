@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y git
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
-    apt-get -y install gcc mono-mcs musl-dev mdbtools ssh vim language-pack-de && \
+    apt-get -y install gcc mono-mcs musl-dev mdbtools ssh vim language-pack-de gnuplot graphviz && \
     rm -rf /var/lib/apt/lists/*
 
 # Switch back to notebook user (defined in the base image)
