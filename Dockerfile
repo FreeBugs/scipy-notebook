@@ -48,6 +48,7 @@ RUN python -m pip install git+git://github.com/FreeBugs/pyGeoDb.git
 RUN python -m pip install pyprind
 RUN python -m pip install plotly
 RUN python -m pip install snap-stanford
+RUN python -m pip install graph-tool
 
 # Add multithreaded gzip
 RUN python -m pip install mgzip
