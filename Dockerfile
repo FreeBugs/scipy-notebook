@@ -51,3 +51,4 @@ RUN python -m pip install snap-stanford
 RUN python -m pip install mgzip
 
 RUN conda install -y graph-tool
+RUN conda install -y python-igraph
