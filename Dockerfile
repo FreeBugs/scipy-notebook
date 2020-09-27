@@ -49,6 +49,9 @@ RUN python -m pip install pyprind
 RUN python -m pip install plotly
 RUN python -m pip install snap-stanford
 RUN python -m pip install mgzip
+RUN python -m pip install fa2
+RUN python -m pip install svgutils
+RUN python -m pip install svglib
 
 RUN conda install -y graph-tool
 RUN conda install -y python-igraph

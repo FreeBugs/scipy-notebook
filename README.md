@@ -14,6 +14,7 @@ __Can be used locally or for docker swarm spawner usage, supporting homes on net
 | pandas         | 1.0
 | scikit-learn   | 0.22
 | tensorflow     | 2.1
+| igraph-python  | 0.8.2
 
 Report issues here: https://github.com/FreeBugs/scipy-notebook/issues
 
